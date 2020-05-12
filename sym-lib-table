@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name sensor)(type Legacy)(uri /home/artsin/Dev/ultrasonic-oxygen-sensor/oxygen-sensor-pcb/footprints.pretty)(options "")(descr ""))
+  (lib (name ultrasonic-sensor-library)(type Legacy)(uri ${KIPRJMOD}/ultrasonic-sensor-library.lib)(options "")(descr ""))
+)
