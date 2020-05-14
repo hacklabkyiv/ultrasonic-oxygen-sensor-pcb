@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:oxygen-sensor-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -525,13 +524,13 @@ $EndComp
 $Comp
 L Device:L L1
 U 1 1 5EB3DEA4
-P 8350 3500
-F 0 "L1" H 8403 3546 50  0000 L CNN
-F 1 "22uH" H 8403 3455 50  0000 L CNN
-F 2 "Inductor_SMD:L_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 8350 3500 50  0001 C CNN
-F 3 "~" H 8350 3500 50  0001 C CNN
-	1    8350 3500
-	1    0    0    -1  
+P 8500 3650
+F 0 "L1" H 8553 3696 50  0000 L CNN
+F 1 "22uH" H 8553 3605 50  0000 L CNN
+F 2 "Inductor_SMD:L_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 8500 3650 50  0001 C CNN
+F 3 "~" H 8500 3650 50  0001 C CNN
+	1    8500 3650
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:C C13
@@ -545,16 +544,7 @@ F 3 "~" H 9200 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8350 3650 8750 3650
-Connection ~ 8350 3650
-Wire Wire Line
 	8750 3650 9200 3650
-Connection ~ 8750 3650
-Wire Wire Line
-	8350 3350 8750 3350
-Wire Wire Line
-	8750 3350 9200 3350
-Connection ~ 8750 3350
 $Comp
 L power:+3.3V #PWR0105
 U 1 1 5EB41E98
@@ -566,17 +556,15 @@ F 3 "" H 9650 3700 50  0001 C CNN
 	1    9650 3700
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	8750 3250 8750 3350
 $Comp
 L power:GND #PWR0106
 U 1 1 5EB4304B
-P 8750 3250
-F 0 "#PWR0106" H 8750 3000 50  0001 C CNN
-F 1 "GND" H 8755 3077 50  0000 C CNN
-F 2 "" H 8750 3250 50  0001 C CNN
-F 3 "" H 8750 3250 50  0001 C CNN
-	1    8750 3250
+P 8950 3350
+F 0 "#PWR0106" H 8950 3100 50  0001 C CNN
+F 1 "GND" H 8955 3177 50  0000 C CNN
+F 2 "" H 8950 3350 50  0001 C CNN
+F 3 "" H 8950 3350 50  0001 C CNN
+	1    8950 3350
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -955,4 +943,12 @@ F 3 "" H 7400 1450 50  0001 C CNN
 	1    7400 1450
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	8650 3650 8750 3650
+Connection ~ 8750 3650
+Wire Wire Line
+	8750 3350 8950 3350
+Wire Wire Line
+	8950 3350 9200 3350
+Connection ~ 8950 3350
 $EndSCHEMATC
